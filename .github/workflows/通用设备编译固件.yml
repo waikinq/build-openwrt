@@ -68,7 +68,7 @@ jobs:
           if [[ "${{ inputs.source_branch }}" == *"openwrt"* ]]; then
               REPO_URL="https://github.com/openwrt/openwrt"
               REPO_BRANCH="openwrt-23.05"
-              TAGS_NAME="official"
+              TAGS_NAME="KTGW"
           elif [[ "${{ inputs.source_branch }}" == *"lede"* ]]; then
               REPO_URL="https://github.com/coolsnowwolf/lede"
               REPO_BRANCH="master"
@@ -190,12 +190,10 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           body: |
 
-            ### OpenWrt Image information
+            ### KTGW Image information
             - Default IP: 192.168.1.1
             - Default username: root
             - Default password: password
-            - Default WIFI name: OpenWrt
-            - Default WIFI password: none
             ### Install to EMMC
             - Login to OpenWrt → System → Amlogic Service → Install OpenWrt
             ### OpenWrt Image Verification
