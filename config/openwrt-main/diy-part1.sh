@@ -11,6 +11,3 @@
 
 # other
 # rm -rf package/utils/{ucode,fbtest}
-
-echo >> feeds.conf.default
-echo 'src-git argon https://github.com/jerrykuku/luci-theme-argon.git;main' >> feeds.conf.default
